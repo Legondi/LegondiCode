@@ -23,12 +23,14 @@
 
         entrada.close();
 
-        if (valorA > valorB & valorA > valorC){ 
+            if (valorA > valorB && valorA > valorC){ 
             System.out.println("A");
-             } else if (valorB > valorA & valorB > valorC){ 
+             } else if (valorB > valorA && valorB > valorC){ 
             System.out.println("B");
-             } else if (valorC > valorB & valorC > valorA){ 
+             } else if (valorC > valorA && valorC > valorB){ 
             System.out.println("C");
+             } else if (valorB == valorA && valorB == valorC){ 
+            System.out.println("Todos Iguais");
              }
    
    
