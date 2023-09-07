@@ -19,6 +19,8 @@ import java.util.Scanner;
 
         System.out.println("Seu IMC é: ");
         System.out.println(imc);
+
+        entrada.close();
     
        
      if (imc < 18.5){ 
@@ -43,12 +45,10 @@ import java.util.Scanner;
 
      if (imc > 39.9){ 
         System.out.println("obesidade grau III");
-     }
-     
-     else  { 
-       
-    }
+     } else  {}
+   
+}
  
 }
 
-}
+
