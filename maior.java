@@ -23,18 +23,20 @@
 
         entrada.close();
 
-            if (valorA > valorB && valorA > valorC){ 
-            System.out.println("A");
-             } else if (valorB > valorA && valorB > valorC){ 
-            System.out.println("B");
-             } else if (valorC > valorA && valorC > valorB){ 
-            System.out.println("C");
-             } else if (valorB == valorA && valorB == valorC){ 
-            System.out.println("Todos Iguais");
-             }
-   
-   
+            if (valorA > valorB & valorA > valorC){ 
+            System.out.println("A é o maior");} 
+             
+             else if (valorB > valorA & valorB > valorC){ 
+            System.out.println("B é o maior");} 
+             
+             else if (valorC > valorA & valorC > valorB){ 
+            System.out.println("C é o maior");}
+             
+             else if (valorB == valorA | valorB == valorC | (valorC == valorA)){ 
+            System.out.println("Valores iguais!!!");
+          
     }
+      
+  }
 
-    
-}
+} 
