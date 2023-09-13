@@ -10,6 +10,12 @@
       
     double valorC = 0;
 
+    int contador = 0;
+
+    while (contador == 0) {
+      System.out.println("Numero: " + contador);
+      contador++;
+
       Scanner entrada = new Scanner(System.in);
 
         System.out.println("Digite o valor A: ");
@@ -21,7 +27,7 @@
         System.out.println("Digite o valor C: ");
         valorC = entrada.nextDouble();
 
-        entrada.close();
+        
 
             if (valorA > valorB & valorA > valorC){ 
             System.out.println("A é o maior");} 
@@ -34,9 +40,14 @@
              
              else if (valorB == valorA | valorB == valorC | (valorC == valorA)){ 
             System.out.println("Valores iguais!!!");
+            System.out.println(contador = 0);
           
-    }
-      
-  }
+     }
 
-} 
+    
+
+   }
+
+ }
+
+}
