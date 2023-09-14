@@ -6,7 +6,7 @@ import java.util.Scanner;
 
      Scanner entrada = new Scanner(System.in);
 
-     int valor = -1;
+     int valor = 1;
 
      int maior = 0;
 
@@ -21,9 +21,16 @@ import java.util.Scanner;
         if (maior < valor){ 
             maior = valor;}
 
-          System.out.println("maior numero é: " + maior);  
+            else if(menor < valor) {
+              menor = valor;
+            }
+          System.out.println("maior numero é: " + maior); 
+          
+          System.out.println("menor numero é: " + menor);
 
         }
+
+entrada.close();
 
     }
 
