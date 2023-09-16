@@ -12,19 +12,19 @@
 
     int contador = 0;
 
-    while (contador == 0) {
-      System.out.println("Numero: " + contador);
-      contador++;
-
       Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Digite o valor A: ");
+      while (contador == 0) {
+        contador++;
+
+
+        System.out.print("Digite o valor A: ");
         valorA = entrada.nextDouble();
        
-        System.out.println("Digite o valor B: ");
+        System.out.print("Digite o valor B: ");
         valorB = entrada.nextDouble();
 
-        System.out.println("Digite o valor C: ");
+        System.out.print("Digite o valor C: ");
         valorC = entrada.nextDouble();
 
         
@@ -40,13 +40,13 @@
              
              else if (valorB == valorA | valorB == valorC | (valorC == valorA)){ 
             System.out.println("Valores iguais!!!");
-            System.out.println(contador = 0);
+            contador = 0;
           
      }
 
-    
-
    }
+
+   entrada.close();
 
  }
 
