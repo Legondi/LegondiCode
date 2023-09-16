@@ -30,7 +30,10 @@ public class string {
         System.out.println(八_Bā + " " + 五_Wǔ);
         System.out.println(八_Bā + 五_Wǔ);
 
-        System.out.println(你_Nǐ);
+        //a contra barra "\" pode ser utilizada para usar caraceteres especiais que o java pode "reclamar" caso utilizado em conjunto com outros caracteres especiais em uma string
+        System.out.println(你_Nǐ + "\"好_Hǎo = Bom\"");
+
+        System.out.println();
 
 
     
