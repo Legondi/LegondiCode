@@ -6,7 +6,7 @@ public class string {
         // declaração de variavel simples 
         String 你_Nǐ = "Você, ";
 
-        String 在_Zài = "Existir, ";
+        String 再_Zài = "De novo, ";
 
         String 八_Bā= "8";
 
@@ -25,7 +25,7 @@ public class string {
         System.out.println(你_Nǐ.indexOf("ê"));
 
         //alem de usar o operador "+" para concatenar (ligar) as Strings pode ser usado o comando Concat ex: (variavel1.concat(variavel2));
-        System.out.println(你_Nǐ.concat(在_Zài));
+        System.out.println(你_Nǐ.concat(再_Zài));
         //exemplos de concatenação com operador logico
         System.out.println(八_Bā + " " + 五_Wǔ);
         System.out.println(八_Bā + 五_Wǔ);
@@ -33,10 +33,16 @@ public class string {
         //a contra barra "\" pode ser utilizada para usar caraceteres especiais que o java pode "reclamar" caso utilizado em conjunto com outros caracteres especiais em uma string
         System.out.println(你_Nǐ + "\"好_Hǎo = Bom\"");
 
-        System.out.println();
+        
+        //comandos para manipular texto das strings utilizando "\"
+        System.out.println("你好,\n我名字叫 Leonardo");
+        
+        System.out.println("Nǐhǎo,\rWǒ míngzì jiào Leonardo");
 
+        System.out.println("我_Wǒ = Eu,\t见_Jiàn = ver");
 
-    
+        System.out.println("一_Yī = 1!!\b二_Ér = 2!");
+
 
     }
 
