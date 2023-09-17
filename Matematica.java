@@ -39,12 +39,6 @@ public class Matematica {
         //faz qualquer valor aleatorio entre 0.0 e 1.0
         System.out.println(Math.random());
 
-        //
-        System.out.println();
-
-    
-        
-
 }
 
 }
