@@ -6,7 +6,7 @@ public class booleans{
 
         boolean 七_Qī7 = true;
 
-        int 七_Qī = 7;
+        int 七_Qī = 0;
 
         Scanner 凌_Líng = new Scanner (System.in);
         
@@ -15,25 +15,24 @@ public class booleans{
 
         
         
-        if (七_Qī == 7) {
-            
-            七_Qī7 = true;
+        if (七_Qī == 7) {七_Qī7 = true;
             
             System.out.println("我_Wǒ acertou!!");}
                
-        else {
+        else {七_Qī7 = false;
 
-            七_Qī7 = false;
-
-            System.out.println ("我_Wǒ errou!!");
-        }
+            System.out.println ("我_Wǒ errou!!");}
 
         
-      凌_Líng.close();  
-        
+    凌_Líng.close(); 
+      
+            if (七_Qī7) {System.out.println("concluido");}
 
+            else {System.out.println("refazer");}
 
     }
 
-
 }
+
+
+
