@@ -38,5 +38,3 @@ area = base * altura / 2
 
 print ('A área do triângulo é', area, 'cm²')
 
-
-
