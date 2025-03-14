@@ -43,4 +43,6 @@ ano_atual = input("Informe o ano atual: ")
 
 print("Estamos em: ", dia_atual, "/", mes_atual, "/", ano_atual)
 
-diaA , mesA , anoA = int(dia_nascimento - dia_atual), int(mes_atual), int(ano_atual)
+diaA , mesA , anoA = int(dia_nascimento - dia_atual), int(mes_nascimento - mes_atual), int(ano_nascimento - ano_atual)
+
+print("Você tem: ", diaA, "dias", mesA, "meses", anoA, "anos")
