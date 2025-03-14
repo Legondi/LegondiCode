@@ -97,6 +97,39 @@ print ('A área do triângulo é', area, 'cm²') """
 #龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
 
 
+# alt = float(input('Digite a altura: '))
+# raio = float(input('digite o raio:'))
+
+# area = 2 * 3.14159 * raio ** 2 + 2 * 3.14159 * raio * alt
+
+# litro = area / 3
+
+# qtd1 = (litro / 5)
+
+# qtd = round(qtd1, 2)
+
+# result = qtd * 20.57
+
+# custo = round(result, 2)
+
+# print ('Sera necessário', qtd, 'latas de tinta totalizando um custo de', custo, 'reais')
+
+
+#龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
+
+
+coordenada_Px = float(input('digite a coordenada x do primeiro ponto: '))
+coordenada_Py = float(input('digite a coordenada y do primeiro ponto: '))
+
+coordenada_Qx = float(input('digite a coordenada x do segundo ponto: '))
+coordenada_Qy = float(input('digite a coordenada y do segundo ponto: '))
+
+
+distancia = ((coordenada_Qx - coordenada_Px) ** 2 + (coordenada_Qy - coordenada_Py) ** 2) ** 0.5
+
+print ('A distância entre P e Q é', distancia)
+ 
+ 
 
 
 #龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
