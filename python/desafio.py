@@ -15,20 +15,26 @@ Coloque o código no fórum e faça comentários do código pesquisado """
 #龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
 
 
+""" Neste algoritmo tentei utilizar somente operações e funções apresentadas durante a aula
+para não fugir do escopo lógico do desafio. Irá apresentar idade, meses e dias vividos com
+uma margem de erro para anos bissextos. """
 
-dia_nascimento = int(input("Informe seu dia de nascimento: "))
-mes_nascimento = int(input("Informe seu mes de nascimento: "))
-ano_nascimento = int(input("Informe seu ano de nascimento: "))
+
+#龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
+
+
+
+mes_nascimento = int(input("Informe apenas o seu mês de nascimento (número): "))
+dia_nascimento = int(input("Informe apenas o seu dia de nascimento (número): "))
+ano_nascimento = int(input("Informe apenas o seu ano de nascimento (número): "))
 
 
 print("Você nasceu em: ", dia_nascimento, "/", mes_nascimento, "/", ano_nascimento)
 
 
-dia_atual = int(input("Informe o dia atual: "))
-mes_atual = int(input("Informe o mes atual: "))
-ano_atual = int(input("Informe o ano atual: "))
-
-print("Estamos em: ", dia_atual, "/", mes_atual, "/", ano_atual)
+mes_atual = int(input("Informe apenas o mês atual (número): "))
+dia_atual = int(input("Informe apenas o dia atual (número): "))
+ano_atual = int(input("Informe apenas o ano atual (número): "))
 
 atual_total = ano_atual * 365 + mes_atual * 30 + dia_atual
 nascimento_total = ano_nascimento * 365 + mes_nascimento * 30 + dia_nascimento
