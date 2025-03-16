@@ -15,34 +15,44 @@ Coloque o código no fórum e faça comentários do código pesquisado """
 #龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
 
 
-""" 
-referencias para execucão do desafio: https://www.w3schools.com/python/ref_func_map.asp
 
-                                      https://www.w3schools.com/python/ref_string_split.asp """                   
-         
-                                      
-#龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
-
-# data_nascimento = input("Informe sua data de nascimento (DD/MM/AAAA): ")
-
-# dia = map(int, data_nascimento.split('/'))
-
-# print (dia)
-
-dia_nascimento = input("Informe seu dia de nascimento: ")
-mes_nascimento = input("Informe seu mes de nascimento: ")
-ano_nascimento = input("Informe seu ano de nascimento: ")
+dia_nascimento = int(input("Informe seu dia de nascimento: "))
+mes_nascimento = int(input("Informe seu mes de nascimento: "))
+ano_nascimento = int(input("Informe seu ano de nascimento: "))
 
 
 print("Você nasceu em: ", dia_nascimento, "/", mes_nascimento, "/", ano_nascimento)
 
 
-dia_atual = input("Informe o dia atual: ")
-mes_atual = input("Informe o mes atual: ")
-ano_atual = input("Informe o ano atual: ")
+dia_atual = int(input("Informe o dia atual: "))
+mes_atual = int(input("Informe o mes atual: "))
+ano_atual = int(input("Informe o ano atual: "))
 
 print("Estamos em: ", dia_atual, "/", mes_atual, "/", ano_atual)
 
-diaA , mesA , anoA = int(dia_nascimento - dia_atual), int(mes_nascimento - mes_atual), int(ano_nascimento - ano_atual)
+atual_total = ano_atual * 365 + mes_atual * 30 + dia_atual
+nascimento_total = ano_nascimento * 365 + mes_nascimento * 30 + dia_nascimento
+dias_vividos = atual_total - nascimento_total
 
-print("Você tem: ", diaA, "dias", mesA, "meses", anoA, "anos")
+idade1 = dias_vividos / 365
+
+simplificarA = int(idade1)
+
+idade2 = idade1 - simplificarA
+
+idadeMes = idade2 * 12
+
+simplificarM = int(idadeMes)
+
+idade3 = idadeMes - simplificarM
+
+idadeDia = idade3 * 30
+
+simplificarD = int(idadeDia)
+
+#sujeito a erros de calculo, pois não foi levado em consideração os anos bissextos
+print("Você tem: ", simplificarA, "anos", simplificarM, "meses", simplificarD, "dias")
+
+
+
+#龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
