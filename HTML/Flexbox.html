@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    @media (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+        body {
+            background-color: lightcoral;
+        }
+    }
+
+    #conteiner {
+        display: flexbox;
+        flex-wrap: wrap;
+
+    }
+
+    #conteiner>div {
+
+        background-color: mediumslateblue;
+        padding: 20px;
+        margin: 20px;
+        font-size: 20px;
+        width: 200px;
+
+    }
+
+    #grid {
+        display: grid;
+        padding: 20px;
+        background-color: rgb(47, 0, 255);
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 200px 200px 200px auto;
+    }
+
+    #grid > div {
+        
+        background-color: mediumslateblue;
+        padding: 20px;
+        font-size: 20px;
+      
+
+    }
+
+</style>
+
+<body>
+    <div id="grid">
+        <div>1. flexbox</div>
+        <div>2. flexbox</div>
+        <div>3. flexbox</div>
+        <div>4. flexbox</div>
+        <div>5. flexbox</div>
+        <div>6. flexbox</div>
+        <div>7. flexbox</div>
+        <div>8. flexbox</div>
+        <div>9. flexbox</div>
+        <div>10. flexbox</div>
+        <div>11. flexbox</div>
+        <div>12. flexbox</div>
+
+    </div>
+
+    <div id="conteiner">
+        <div>1. flexbox</div>
+        <div>2. flexbox</div>
+        <div>3. flexbox</div>
+        <div>4. flexbox</div>
+        <div>5. flexbox</div>
+        <div>6. flexbox</div>
+        <div>7. flexbox</div>
+        <div>8. flexbox</div>
+        <div>9. flexbox</div>
+        <div>10. flexbox</div>
+        <div>11. flexbox</div>
+        <div>12. flexbox</div>
+
+    </div>
+
+
+</body>
+
+</html>

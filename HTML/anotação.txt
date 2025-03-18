@@ -1,0 +1,18 @@
+-VIEWPORT- 
+
+
+#COMANDO PARA
+<meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+
+
+-Media Queries-
+
+
+Media Types: all,print, screen, speech...
+
+Media Features:width, heigth resolution
+
+
+-Flexbox-
+
+
