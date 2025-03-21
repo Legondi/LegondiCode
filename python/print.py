@@ -130,6 +130,4 @@ distancia = ((coordenada_Qx - coordenada_Px) ** 2 + (coordenada_Qy - coordenada_
 print ('A distância entre P e Q é', distancia)
  
  
-
-
 #龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
