@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Bem-vindo ao JavaScript!</h1>
+    <button onclick="mudarTexto()">Clique aqui</button>
+
+    <script>
+        // Exibe uma mensagem no console
+        console.log("Olá, mundo! Este é o JavaScript funcionando.");
+
+        // Função para alterar o texto do título
+        function mudarTexto() {
+            const titulo = document.getElementById("titulo");
+            titulo.textContent = "Você clicou no botão!";
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula0304</title>
+
+    <script>
+      function clicou() {
+        window.open("https://www.univille.br", "_blank");
+      }
+
+      window.setInterval(() => {
+        console.log("teste do diabo");
+      }, 3000);
+
+      window.setTimeout(() => {
+        console.log("console misericordia");
+      }, 5000);
+
+      const intervalo = window.setInterval(() => {
+        console.log("TESTEEEEEEEEEEEEE");
+      }, 2000);
+
+      window.setTimeout(() => {
+        clearInterval(intervalo);
+      }, 10000);
+
+      console.log
+    </script>
+  </head>
+  <body>
+    <button onclick="clicou()">Clique aqui</button>
+  </body>
+</html>
