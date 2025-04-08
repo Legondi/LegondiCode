@@ -4,17 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aula-7-4</title>
-    <script>
-      function carregarHeading() {
-        const titulo = document.getElementById("foo");
-        titulo.textContent = "Professores";
-        titulo.style.color = "red";
+    <style>
+      .dark {
+        background-color: black;
+        color: white;
       }
-      window.onload = carregarHeading;
+    </style>
+    <script>
+        function boasVindas() {
+      const nome = window.prompt("Qual o seu nome?");
+      const heading = document.getElementById("foo");
+      heading.textContent = "bem vindo (a), " + nome;
+    }
+    window.onload = boasVindas;
+      //   function trocaCor() {
+      //     document.getElementById("botao").classList.toggle("dark");
+      //   }
+      //   function carregarHeading() {
+      //     const titulo = document.getElementById("foo");
+      //     titulo.textContent = "Professores";
+      //     titulo.style.color = "red";
+      //   }
+      //   window.onload = carregarHeading;
+      //   function muda() {
+      //     document.getElementById("muda").style.color = "red";
+      //     document.getElementById("muda").style.backgroundColor = "black";
+      //   }
+      //   function novo() {
+      //     const novo = document.createElement("p");
+      //     novo.textContent = "Teste";
+      //     document.getElementById("foo").appendChild(novo);
+      //   }
+      //   window.onload = novo;
+      //   function remover() {
+      //     const remover = document.getElementById("foo");
+      //     remover.remove();
+      //   }
+      //   window.onload = remover;
     </script>
   </head>
   <body>
-    <h1 id="foo">alunos</h1>
+    <h1 id="foo"></h1>
+    <!-- <button id="botao" onclick="trocaCor()">clica aqui</button> -->
+    <!-- <p id="foo">TESTE</p> -->
+    <!-- <div id="foo"></div> -->
+    <!-- <button id="muda" onclick="muda()">Clica Aqui</button> -->
+    <!-- <h1 id="foo">alunos</h1> -->
   </body>
 
   <!-- <script>
