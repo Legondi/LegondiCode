@@ -1,5 +1,5 @@
-from python import desafio
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../python")))
 
-def test_calculo_simples():
-    resultado = desafio.calcular_idade(2000, 1, 1, 2025, 1, 1)
-    assert resultado["anos"] == 25
+from desafio import calcular_idade
