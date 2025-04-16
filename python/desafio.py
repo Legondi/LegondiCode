@@ -23,6 +23,18 @@ uma margem de erro para anos bissextos. """
 #龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙龙
 
 
+def calcular_idade(ano_nasc, mes_nasc, dia_nasc, ano_atual, mes_atual, dia_atual):
+    atual_total = ano_atual * 365 + mes_atual * 30 + dia_atual
+    nascimento_total = ano_nasc * 365 + mes_nasc * 30 + dia_nasc
+    dias_vividos = atual_total - nascimento_total
+
+    anos = int(dias_vividos / 365)
+    meses = int((dias_vividos % 365) / 30)
+    dias = int((dias_vividos % 365) % 30)
+
+    return {"anos": anos, "meses": meses, "dias": dias}
+
+
 
 mes_nascimento = int(input("Informe apenas o seu mês de nascimento (número): "))
 dia_nascimento = int(input("Informe apenas o seu dia de nascimento (número): "))
